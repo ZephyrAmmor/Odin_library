@@ -4,8 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ari's Library</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+    <h1>Ari's Library</h1>
+    <a href=""></a>
+    <form action="" id="book">
+        <input type="text" id="name" placeholder="Book Name" required>
+        <input type="text" id="author" placeholder="Author" required>
+        <input type="text" id="year" placeholder="Year" required>
+        <input type="number" id="pages" placeholder="Pages" required>
+        <input type="checkbox" id="read" required>
+        <label for="read">Have Read!</label>
+        <input type="submit" id='submit' value="Add Book" required>
+    </form>
+    </header>
+    <div id="books">
+        <div class="book">
+            <h3>Book Name</h3>
+            <h3>Author</h3>
+            <h3>Year</h3>
+            <h3>Pages</h3>
+            <h3>Read</h3>
+        </div>
+    </div>
 </body>
+<script src="script.js"></script>
 </html>

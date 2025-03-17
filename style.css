@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+* {
+    font-family: "Italianno", cursive;
+    font-weight: 550;
+    font-style: normal;
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Italianno", cursive;
+    font-weight: 400;
+    font-style: normal;
+    display: grid;
+    grid-template-columns: 200px 1fr; /* Sidebar width and content width */
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 20px;
+    height: 100vh; /* Full height of the viewport */
+}
+
+header {
+    grid-row: 1 / -1; /* Span the full height */
+    grid-column: 1 / 2;
+    background-color: #f4f4f4; /* Sidebar background color */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+#read{
+    height: 1rem;
+    position: relative;
+    top: 2%;
+    left: 40%;
+    font-size: 2em;
+}
+#books {
+    background-color: #f4f4f4; /* Changed to a more neutral color */
+    grid-row-start: 1;
+    grid-column: 2 / -1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.book {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.book h3, .book button {
+    margin: 0 10px;
+}
+
+button {
+    height: 35px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+label{
+    margin-top: -1.5rem;
+}
+input[type="checkbox"]{
+    margin-right: 10px;
+}
